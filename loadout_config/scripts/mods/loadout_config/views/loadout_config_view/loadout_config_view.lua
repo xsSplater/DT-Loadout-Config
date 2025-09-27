@@ -57,7 +57,7 @@ local slot_buttons_settings = Definitions.slot_buttons_settings
 
 local LoadoutConfigView = class("LoadoutConfigView", "BaseView")
 function LoadoutConfigView:init(settings)
-  local extra_package_name = "packages/ui/views/crafting_replace_perk_view/crafting_replace_perk_view"
+  local extra_package_name = "packages/ui/views/crafting_mechanicus_replace_perk_view/crafting_mechanicus_replace_perk_view"
 
   LoadoutConfigView.super.init(self, Definitions, settings, nil, extra_package_name)
 

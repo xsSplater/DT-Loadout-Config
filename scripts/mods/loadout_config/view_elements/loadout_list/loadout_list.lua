@@ -166,6 +166,11 @@ function ViewElementLoadoutList:_on_create_button_pressed()
   local profile = player:profile()
   local archetype = profile.archetype
   local archetype_name = archetype.name
+
+  if self._saved_loadouts[archetype_name] == nil then
+    self._saved_loadouts[archetype_name] = {}
+  end
+
   local archetype_loadouts = self._saved_loadouts[archetype_name]
   table.insert(archetype_loadouts, loadout)
 
